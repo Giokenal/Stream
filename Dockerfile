@@ -15,7 +15,7 @@ RUN git clone https://github.com/Giokenal/Stream .
 RUN pip install --no-cache-dir -r requirements.txt
 
 
-EXPOSE 8888
+EXPOSE 1111
 
 # Run run.py when the container launches
 CMD ["uvicorn", "run:main_app", "--host", "0.0.0.0", "--port", "1111", "--workers", "4"]
